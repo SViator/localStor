@@ -1,4 +1,67 @@
-.l {
-	width: 200px;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #bad4dd;
+}
+
+.wraper {
+	max-width: 666px;
 	margin: 0 auto;
+}
+
+.header {
+	height: 55px;
+	padding-top: 5px;
+	text-align: center;
+	background-color: aqua;
+}
+
+.hidden {
+	display: none;
+}
+
+.edit {
+	padding-bottom: 20px;
+	background-color: bisque;
+}
+
+.edit__btns {
+	display: flex;
+	padding: 15px;
+}
+
+.edit__btn {
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.add-fom {
+	max-width: 220px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	background-color: cornflowerblue;
+}
+
+.add-fom__input {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.list {
+	padding-top: 15px;
+	background-color: #e9dee9;
+	border: 2px solid #ceafce;
+}
+
+.new-note {
+	margin-bottom: 15px;
+	padding: 4px;
+	border: 1px solid #8ba4c9;
+	background-color: rgb(255, 234, 221);
 }

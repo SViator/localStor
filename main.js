@@ -36,11 +36,11 @@ function render() {
 
 	if (dataBase) {
 		dataBase.forEach(element => {
-			const newNote = document.createElement('p');
+			const newNote = document.createElement('div');
+			newNote.className = 'new-note';
 			newNote.innerHTML = `
-				Имя: ${element.name}
-				<br />
-				Статус: ${element.state}`;
+				<p><b>Имя: </b>${element.name}</p>
+				<p><b>Статус: </b>${element.state}</p>`;
 			list.append(newNote);
 		});
 	}

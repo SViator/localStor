@@ -9,21 +9,35 @@
 </head>
 
 <body>
-	<section class="l">
-		<h1>Локал</h1>
-		<button id="addBtn">Добавить запись</button>
-		<br />
-		<br />
-		<form action="">
-			<label>Имя:<input id="name" type="text"></label>
-			<label>Статус:<input id="state" type="text"></label>
-			<br />
-			<br />
-			<button id="submit" type="submit">Добавить запись</button>
 
-		</form>
-	</section>
-	<section id="list"></section>
+	<div class="wraper">
+		<header class="header">
+			<h1>use localStorage</h1>
+		</header>
+
+		<main class="main" id="main">
+			<section class="edit">
+				<div class="edit__btns">
+					<button class="edit__btn" id="addBtn">Редактировать список</button>
+					<div id="edit__menu">
+						<button class="edit__btn" type="button">Добавить запись</button>
+						<button class="edit__btn" type="button">Удалить запись</button>
+						<button class="edit__btn" type="button">Изменить запись</button>
+					</div>
+				</div>
+
+				<form class="add-fom" action="">
+					<label>Имя:<input class="add-fom__input" id="name" type="text"></label>
+					<label>Статус:<input class="add-fom__input" id="state" type="text"></label>
+					<button id="submit" type="submit">Добавить</button>
+					<button id="submit" type="submit">Отмена</button>
+				</form>
+			</section>
+
+			<section class="list" id="list"></section>
+
+		</main>
+	</div>
 
 	<script src="./main.js"></script>
 </body>
